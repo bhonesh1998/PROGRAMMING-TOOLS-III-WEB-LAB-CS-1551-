@@ -1,0 +1,15 @@
+import java.util.*;
+
+class q8
+{
+
+	public static void main(String a[])
+	{
+			for(int i=0;i<26;i++)
+			{	char ch = i+'A';
+				System.out.println(ch);
+			}
+	}
+
+
+}

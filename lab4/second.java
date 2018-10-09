@@ -1,0 +1,89 @@
+/*
+NAME - BHONESH CHAWLA
+REGNO - 20164017
+BATCH - CSA
+CONTACT - 8619127663
+*/
+
+import java.util.*;
+
+class second
+{
+    
+    static Double total(  Double a[])
+    {
+        double sum = 0;
+        for(int i=0;i<12;i++)
+	     {
+	           sum+=a[i];
+	    }
+	    return sum;
+    }
+    static Double aver(  Double a[])
+    {
+        double sum = 0;
+        for(int i=0;i<12;i++)
+	     {
+	           sum+=a[i];
+	    }
+	    return sum/12;
+    }
+     static int maxofa(  Double a[])
+    {
+        double mmax = a[0];
+        int ans = 0,i;
+        
+        for(i=1;i<12;i++)
+        {
+            if(a[i]>mmax)
+            {
+                mmax=a[i];
+                ans=i;
+            }
+            
+        }
+        
+       //Arrays.sort(a);
+	    return ans;
+    }
+     static int minofa(  Double a[])
+    {
+       double mmin = a[0];
+        int ans = 0,i;
+        
+        for(i=1;i<12;i++)
+        {
+            if(a[i]<mmin)
+            {
+                mmin=a[i];
+                ans=i;
+            }
+            
+        }
+       //Arrays.sort(a);
+	    return ans;
+    }
+    
+    
+    
+	public static void main(String args[])
+			
+	{
+	    System.out.println("enter rainfalls :");
+	    
+	    Double a[]= new Double[12];
+	    Scanner s = new Scanner(System.in);
+	     for(int i=0;i<12;i++)
+	     {
+	           a[i]=s.nextDouble();
+	     }
+
+	     System.out.println("the total rainfall for the year is :"+total(a));
+	     System.out.println("the average monthly rainfall is :"+aver(a));
+	      System.out.println("the month with the least rain is :"+minofa(a));
+	      System.out.println("the month with the max rain is :"+maxofa(a));
+	     
+	     
+	}
+}
+

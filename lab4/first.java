@@ -1,0 +1,45 @@
+/*
+NAME - BHONESH CHAWLA
+REGNO - 20164017
+BATCH - CSA
+CONTACT - 8619127663
+*/
+
+// Code using Buffer Class
+import java.util.*;
+
+class first
+{
+    
+   static String name;
+    static int age;
+    static long mno;
+    static void getDetails()
+    {
+        Scanner s = new Scanner(System.in);
+          System.out.println("enter name");
+         name = s.next();
+            System.out.println("enter age");
+         age = s.nextInt();
+            System.out.println("enter mobile no");
+         mno = s.nextLong();
+        
+    }
+    static void printDetails()
+    {
+        System.out.println( "name is : "+name +"\n"+ 
+                            "age  is :"+age+"\n"+                        
+                            "mobile is :"+mno+"\n" );
+    }
+    
+    
+    
+    
+	public static void main(String args[])
+			
+	{
+	        getDetails();
+	        printDetails();
+	}
+}
+

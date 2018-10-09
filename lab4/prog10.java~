@@ -1,0 +1,54 @@
+/*
+NAME - BHONESH CHAWLA
+REGNO - 20164017
+BATCH - CSA
+CONTACT - 8619127663
+*/
+
+import java.util.*;
+import java.lang.Math;
+class prog10
+{
+	String name;
+	String no;
+	prog10()
+	{name ="";
+	no="";
+	}	
+	void setname(String name)
+	{
+	this.name=name;
+	}
+	void setno(String no)
+	{	
+	this.no=no;
+	}
+	String getname()
+	{
+	return (this.name);
+	}	
+	String getno()
+	{
+	return (this.no);
+	}
+	public static void main(String ags[])
+	{
+	Scanner sc = new Scanner(System.in);
+	prog10 ob[]=new prog10[5];
+	for(int i=0;i<5;i++)
+	{
+	ob[i]=new prog10();
+	System.out.println("enter the name");
+	ob[i].setname(sc.nextLine());
+	System.out.println("enter the no");
+	ob[i].setno(sc.nextLine());
+			
+	}
+	for(int i=0;i<5;i++)
+	{
+	System.out.println("the name is "+ob[i].getname());
+	
+	System.out.println("the name is "+ob[i].getno());
+	}
+}
+}
